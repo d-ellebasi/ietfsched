@@ -31,7 +31,7 @@ public class MotionEventUtils {
 
     static {
         try {
-            MotionEvent.class.getMethod("getPointerId", new Class[]{int.class});
+            MotionEvent.class.getMethod("getPointerId", int.class);
             sMultiTouchApiAvailable = true;
         } catch (NoSuchMethodException nsme) {
             sMultiTouchApiAvailable = false;
