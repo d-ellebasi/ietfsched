@@ -46,7 +46,7 @@ public class ObservableScrollView extends ScrollView {
         mScrollListener = listener;
     }
 
-    public static interface OnScrollListener {
-        public void onScrollChanged(ObservableScrollView view);
+    public interface OnScrollListener {
+        void onScrollChanged(ObservableScrollView view);
     }
 }
