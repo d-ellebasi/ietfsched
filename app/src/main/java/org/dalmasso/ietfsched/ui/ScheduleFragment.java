@@ -79,14 +79,18 @@ public class ScheduleFragment extends Fragment implements
     private static final int TIME_FLAGS = DateUtils.FORMAT_SHOW_DATE | DateUtils.FORMAT_SHOW_WEEKDAY | DateUtils.FORMAT_ABBREV_WEEKDAY;
 		
 	private static final long[] START_DAYS = new long[] {
+            // NOTE: This set of dates must be updated at each new meeting.
+            //       yes, this is not cool.
+            // TODO(morrowc): get this set of dates from the agenda, since we parse that anyway.
 /*		ParserUtils.parseTime("2012-03-24T07:00:00.000+01:00"), (old form) */
-		ParserUtils.parseTime("2017-03-26T07:00:00.000"),
-		ParserUtils.parseTime("2017-03-27T07:00:00.000"),
-		ParserUtils.parseTime("2017-03-28T07:00:00.000"),
-		ParserUtils.parseTime("2017-03-29T07:00:00.000"),
-		ParserUtils.parseTime("2017-03-30T07:00:00.000"),
-		ParserUtils.parseTime("2017-03-31T07:00:00.000")
-		};
+            ParserUtils.parseTime("2017-07-15T07:00:00.000"),
+            ParserUtils.parseTime("2017-07-16T07:00:00.000"),
+            ParserUtils.parseTime("2017-07-17T07:00:00.000"),
+            ParserUtils.parseTime("2017-07-18T07:00:00.000"),
+            ParserUtils.parseTime("2017-07-19T07:00:00.000"),
+            ParserUtils.parseTime("2017-07-20T07:00:00.000"),
+            ParserUtils.parseTime("2017-07-21T07:00:00.000"),
+    };
 
 	
 
@@ -123,7 +127,7 @@ public class ScheduleFragment extends Fragment implements
         private long timeEnd = -1;
     }
 
-    private List<Day> mDays = new ArrayList<Day>();
+    private List<Day> mDays = new ArrayList<>();
 
     private static HashMap<String, Integer> buildTypeColumnMap() {
         final HashMap<String, Integer> map = Maps.newHashMap();
