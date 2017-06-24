@@ -116,8 +116,8 @@ public class HomeActivity extends BaseActivity {
     }
 
 	public boolean isRefreshing() {
-		return mSyncStatusUpdaterFragment != null ? mSyncStatusUpdaterFragment.mSyncing : false;
-		}
+        return mSyncStatusUpdaterFragment != null && mSyncStatusUpdaterFragment.mSyncing;
+    }
 
     /**
      * A non-UI fragment, retained across configuration changes, that updates its activity's UI

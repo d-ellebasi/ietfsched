@@ -87,10 +87,7 @@ public class ActivityHelper {
     }
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_MENU) {
-            return true;
-        }
-        return false;
+        return keyCode == KeyEvent.KEYCODE_MENU;
     }
 
     public boolean onKeyLongPress(int keyCode, KeyEvent event) {
