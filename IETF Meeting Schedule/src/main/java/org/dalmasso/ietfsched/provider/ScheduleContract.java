@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.dalmasso.ietfsched.provider;
+package org.ietf.ietfsched.provider;
 
 import org.dalmasso.ietfsched.util.ParserUtils;
 
