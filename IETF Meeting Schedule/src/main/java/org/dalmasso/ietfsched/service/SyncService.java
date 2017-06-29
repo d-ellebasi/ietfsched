@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.ietf.ietfsched.service;
+package org.dalmasso.ietfsched.service;
 
 //import org.dalmasso.ietfsched.R;
 import org.dalmasso.ietfsched.io.LocalExecutor;

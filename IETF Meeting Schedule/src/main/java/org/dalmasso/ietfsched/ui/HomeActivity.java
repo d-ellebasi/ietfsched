@@ -17,7 +17,7 @@
 package org.dalmasso.ietfsched.ui;
 
 import org.dalmasso.ietfsched.R;
-import org.ietf.ietfsched.service.SyncService;
+import org.dalmasso.ietfsched.service.SyncService;
 //import org.dalmasso.ietfsched.util.AnalyticsUtils;
 import org.dalmasso.ietfsched.util.DetachableResultReceiver;
 //import org.dalmasso.ietfsched.util.EulaHelper;

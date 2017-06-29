@@ -28,7 +28,7 @@ import org.dalmasso.ietfsched.provider.ScheduleDatabase.SessionsSearchColumns;
 import org.dalmasso.ietfsched.provider.ScheduleDatabase.SessionsTracks;
 import org.dalmasso.ietfsched.provider.ScheduleDatabase.Tables;
 //import org.dalmasso.ietfsched.provider.ScheduleDatabase.VendorsSearchColumns;
-import org.ietf.ietfsched.service.SyncService;
+import org.dalmasso.ietfsched.service.SyncService;
 import org.dalmasso.ietfsched.util.SelectionBuilder;
 
 import android.app.Activity;
