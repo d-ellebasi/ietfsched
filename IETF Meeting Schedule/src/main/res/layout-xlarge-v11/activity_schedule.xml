@@ -29,7 +29,8 @@
         android:layout_marginTop="@dimen/activity_vert_padding"
         android:layout_marginBottom="@dimen/activity_vert_padding">
 
-        <fragment android:name="org.dalmasso.ietfsched.ui.ScheduleFragment"
+        <fragment
+            android:name="org.ietf.ietfsched.ui.ScheduleFragment"
             android:id="@+id/fragment_schedule"
             android:layout_width="0dp"
             android:layout_height="fill_parent"

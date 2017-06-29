@@ -17,7 +17,7 @@
 
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.dalmasso.ietfsched"
+    package="org.ietf.ietfsched"
     android:versionCode="27"
     android:versionName="0.1.27"
     android:installLocation="auto">
@@ -27,7 +27,7 @@
         android:targetSdkVersion="21" />
 
     <permission
-        android:name="org.dalmasso.ietfsched.permission.WRITE_SCHEDULE"
+        android:name="org.ietf.ietfsched.permission.WRITE_SCHEDULE"
         android:protectionLevel="normal"
         android:label="@string/permission_write"
         android:description="@string/permission_write" />
@@ -45,7 +45,7 @@
         <!-- Activities for both phones and tablets -->
 
         <activity
-            android:name=".ui.HomeActivity"
+            android:name="org.ietf.ietfsched.ui.HomeActivity"
             android:theme="@style/Theme.IOSched.Home"
             android:label="@string/app_name">
             <intent-filter>
@@ -55,21 +55,21 @@
         </activity>
 
         <activity
-            android:name=".ui.StarredActivity"
+            android:name="org.ietf.ietfsched.ui.StarredActivity"
             android:label="@string/title_starred" />
 			
         <activity
-            android:name=".ui.WellNoteActivity"
+            android:name="org.ietf.ietfsched.ui.WellNoteActivity"
             android:label="@string/title_well_note" />
 			
         <!-- Phone-only activities -->
 
         <activity
-            android:name=".ui.phone.ScheduleActivity"
+            android:name="org.ietf.ietfsched.ui.phone.ScheduleActivity"
             android:label="@string/title_schedule" />
 
         <activity
-            android:name=".ui.phone.TracksActivity"
+            android:name="org.ietf.ietfsched.ui.phone.TracksActivity"
             android:label="@string/title_tracks">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -79,7 +79,7 @@
         </activity>
 
         <activity
-            android:name=".ui.phone.SessionsActivity"
+            android:name="org.ietf.ietfsched.ui.phone.SessionsActivity"
             android:label="@string/title_sessions">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -89,7 +89,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.phone.SessionDetailActivity">
+        <activity android:name="org.ietf.ietfsched.ui.phone.SessionDetailActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -100,11 +100,11 @@
         <!-- Tablet-only activities -->
 
         <activity
-            android:name=".ui.tablet.SessionsMultiPaneActivity"
+            android:name="org.ietf.ietfsched.ui.tablet.SessionsMultiPaneActivity"
             android:label="@string/title_sessions" />
 			
         <activity
-            android:name=".ui.tablet.ScheduleMultiPaneActivity"
+            android:name="org.ietf.ietfsched.ui.tablet.ScheduleMultiPaneActivity"
             android:label="@string/title_schedule" />
 			
         <activity
@@ -113,11 +113,11 @@
 
         <!-- Other manifest items -->
 
-        <service android:name=".service.SyncService" />
+        <service android:name="org.ietf.ietfsched.service.SyncService" />
 
         <provider
-            android:name=".provider.ScheduleProvider"
-            android:authorities="org.dalmasso.ietfsched"
+            android:name="org.ietf.ietfsched.provider.ScheduleProvider"
+            android:authorities="org.ietf.ietfsched"
             android:writePermission="org.dalmasso.ietfsched.permission.WRITE_SCHEDULE" />
 
     </application>

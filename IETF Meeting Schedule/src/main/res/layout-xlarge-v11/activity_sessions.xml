@@ -30,7 +30,8 @@
             android:layout_height="fill_parent"
             android:layout_weight="1">
 
-            <fragment android:name="org.dalmasso.ietfsched.ui.tablet.TracksDropdownFragment"
+            <fragment
+                android:name="org.ietf.ietfsched.ui.tablet.TracksDropdownFragment"
                 android:id="@+id/fragment_tracks_dropdown"
                 android:layout_width="fill_parent"
                 android:layout_height="@dimen/thickbar_height" />

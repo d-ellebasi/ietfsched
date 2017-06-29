@@ -28,8 +28,9 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp">
-		
-       <fragment android:name="org.dalmasso.ietfsched.ui.WhatsOnFragment"
+
+		<fragment
+			android:name="org.ietf.ietfsched.ui.WhatsOnFragment"
             android:id="@+id/fragment_whats_on"
             android:layout_width="fill_parent"
             android:layout_height="@dimen/whats_on_height" />
@@ -41,7 +42,8 @@
 			android:layout_height="fill_parent"
 	        android:layout_marginTop="10dp">
 
-			<fragment android:name="org.dalmasso.ietfsched.ui.DashboardFragment"
+			<fragment
+				android:name="org.ietf.ietfsched.ui.DashboardFragment"
 				android:id="@+id/fragment_dashboard"
 				android:layout_marginLeft="20dp"
 				android:layout_weight="1"
